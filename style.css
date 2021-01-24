@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.maincontent {
+    width: 1024px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.headermenu {
+    background-color: #000000;
+}
+
+.headermenu ul {
+    text-align: center;
+}
+
+.headermenu ul li {
+    display: inline-block;
+    margin-left: -4px;
+}
+
+.headermenu ul li a {
+    display: inline-block;
+    padding: 25px 30px;
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.headermenu ul li:hover > a{
+    background-color: rgb(105, 105, 184);
+}
+
+/* Dorrpdonw menu start */
+
+.headermenu ul li{
+    position: relative;
+}
+
+.headermenu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 300px;
+    background-color: black;
+    border-top: 3px solid rgb(97, 34, 170);
+
+    transition: .5s;
+}
+.headermenu ul li ul li {
+    display: block;
+    margin-left: 0;
+}
+.headermenu ul li ul li a{
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgb(114, 126, 114);
+}
+.headermenu ul ul li:first-child a{
+    border-left: none;
+}
+
+/* hover test */
+.headermenu ul li ul{
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.headermenu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.headermenu ul li ul li a:hover{}
+
+/* container */
+
+.container {
+    background-image: url(https://jssors8.azureedge.net/demos/img/gallery/980x380/002.jpg);
+    width: 1024px;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.title{
+
+}
+.slider{
+    background-color: aliceblue;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 190px;
+}
+.Subtitle{
+    background-color: aliceblue;
+    margin-top: 10px;
+    font-size: 20px;
+    margin: 20px;
+    padding: 5px;
+}
+.More{
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.foorermenu {
+    background-color: #000000;
+    color: aliceblue;
+    padding: 30px;
+}
+
+/* socialmenu */
+
+.socialmenu{
+    margin-top: 30px;
+}
+.socialmenu ul{
+    text-align: center;
+}
+.socialmenu ul li{
+    display: inline-block;
+}
+.socialmenu ul li a{
+    display: inline-block;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+.socialmenu ul li a:hover{}
+
+
+/* Dorrpdonw menu start 2 */
+
+.headermenu ul li ul li ul{
+    left: 100%;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+}
